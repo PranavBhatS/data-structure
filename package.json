@@ -1,0 +1,22 @@
+{
+  "name": "data-structure",
+  "version": "1.0.0",
+  "description": "ds",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "concurrently --kill-others \"tsc -w\" \"nodemon lib/tester.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "typescript": "^4.1.5"
+  }
+}
