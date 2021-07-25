@@ -12,12 +12,12 @@
 // * fn can be passed as an argument
 // * fn can be return as data
 
-var stuffer = function () {
-  console.log("super");
+var logger = function (val) {
+  console.log(val);
 };
 
-function caller(fn) {
-  fn();
+function caller(fn,value) {
+  fn(value);
 }
 function b() {
   return function c() {
@@ -25,4 +25,4 @@ function b() {
   };
 }
 
-caller(stuffer);
+caller(logger,"hello");
