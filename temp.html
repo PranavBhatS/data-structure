@@ -1,0 +1,173 @@
+<ion-row class="tile" *ngIf="false">
+
+     <ion-col size="3">
+       <div class="user-info">
+         <!-- <div class="client_status">{{'Active' }}</div> -->
+         <ion-item class="clientdetails">
+           <ion-avatar slot="start">
+             <img src="assets/images/card-icon.png" />
+             <!-- <img src="{{ client.profileimageurl_10 }}" *ngIf="client.profileimageurl_10 != null" /> -->
+           </ion-avatar>
+           <ion-label class="personal-details">
+             <h2>Pranav bhat &nbsp;</h2>
+             <p>pranavsarang@gmail.com &nbsp;</p>
+             <p>Onboarded: <b>Oct 21, 2021</b> &nbsp;</p>
+             <p>Last active: <b>Oct 21, 2021</b> &nbsp;</p>
+           </ion-label>
+         </ion-item>
+       </div>
+     </ion-col>
+     <ion-row>
+       <ion-col class="bp-col" size="2">
+         <div class="blood-presure">
+           <img src="/assets/common/ihealth-devices/Blood Pressure Monitor.png" alt="">
+         </div>
+       </ion-col>
+   
+       <ion-col size="2">
+   
+       </ion-col>
+   
+       <ion-col size="2">
+   
+       </ion-col>
+       <ion-col size="1">
+   
+       </ion-col>
+       <ion-col size="2">
+   
+       </ion-col>
+     </ion-row>
+   
+   </ion-row>
+   
+   <div class="section group" *ngFor="let client of clientlist">
+     <ng-container>
+       <div class="col outer-1">
+         <ion-item class='user-info'>
+           <ion-avatar slot="start">
+             <img src="assets/images/card-icon.png" />
+             <!-- <img src="{{ client.profileimageurl_10 }}" *ngIf="client.profileimageurl_10 != null" /> -->
+           </ion-avatar>
+           <ion-label class="personal-details">
+             <h2>{{client.tiles[0].first_name}} {{client.tiles[0].last_name}} &nbsp;</h2>
+             <p>{{client.tiles[0].email}} &nbsp;</p>
+             <p>Onboarded: <b>{{client.tiles[0].onBoardedDate}}</b> &nbsp;</p>
+             <p>Last active: <b>{{client.tiles[0].lastAccessDate}}</b> &nbsp;</p>
+           </ion-label>
+         </ion-item>
+       </div>
+       <div class="col outer-2">
+         <!-- <div class="group"> -->
+         <div class="col bp-block">
+           <div class="responsive-boxs">
+             <label class="box-tittle">
+               <img src="/assets/common/ihealth-devices/Blood Pressure Monitor.png" alt="">
+               <span>
+                 Blood Pressure
+               </span>
+             </label>
+             <div class="box-details">
+               <div class="main-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+               <div class="sec-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col po-block">
+           <div class="responsive-boxs">
+             <label class="box-tittle">
+               <img src="/assets/common/ihealth-devices/Blood Pressure Monitor.png" alt="">
+               <span>
+                 pulse oximeter
+               </span>
+             </label>
+             <div class="box-details">
+               <div class="main-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+               <div class="sec-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col ws-block">
+   
+           <div class="responsive-boxs">
+             <label class="box-tittle">
+               <img src="/assets/common/ihealth-devices/Blood Pressure Monitor.png" alt="">
+               <span>
+                 Weight scale
+               </span>
+             </label>
+             <div class="box-details">
+               <div class="main-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+               <div class="sec-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col v-block">
+           <div class="responsive-boxs">
+             <label class="box-tittle">
+               <span>
+                 vista done
+               </span>
+             </label>
+             <div class="box-details">
+               <div class="main-day">
+                 <h2> 10 </h2>
+                 <p>&nbsp;</p>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col o-block">
+           <div class="responsive-boxs">
+             <label class="box-tittle">
+               <img src="/assets/common/ihealth-devices/Blood Pressure Monitor.png" alt="">
+               <span>
+                 last outcome
+               </span>
+             </label>
+             <div class="box-details">
+               <div class="main-day">
+                 <h2> 120/80 </h2>
+                 <p>
+                   Jun 7
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </ng-container>
+   
+     <!-- </div> -->
+   
+   </div>

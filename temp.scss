@@ -1,0 +1,181 @@
+// .tile {
+//      box-shadow: 0 0px 6px #0000001f !important;
+//      border-radius: 10px;
+//      .user-info {
+//           ion-avatar {
+//                box-shadow: 0px 0px 2px #000;
+//                height: 50px;
+//                width: 50px;
+//           }
+//           .personal-details {
+//                h2 {
+//                     font-size: 16px;
+//                     font-weight: revert;
+//                }
+//                p {
+//                     font-size: 14px;
+//                }
+//                p:not(:nth-child(2)) {
+//                     font-size: 12px;
+//                }
+//           }
+//      }
+//      .bp-col {
+//           background-color: #caffcaa3;
+//      }
+// }
+
+/*  SECTIONS  */
+.section {
+     clear: both;
+     padding: 0px;
+     margin: 0px;
+     box-shadow: 0 0px 6px #0000001f !important;
+     border-radius: 10px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+     display: block;
+     float: left;
+     /* margin: 1% 0 1% 1%; */
+     // height: 120px;
+}
+.col:first-child {
+     margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+     content: "";
+     display: table;
+}
+.group:after {
+     clear: both;
+}
+.group {
+     zoom: 1; /* For IE 6/7 */
+}
+
+/*required 
+   */
+
+.outer-1 {
+     width: 25%;
+}
+.outer-2 {
+     width: 75%;
+}
+
+.bp-block {
+     width: 29.7%;
+     margin-right: .3%;
+     background-color: #edf;
+}
+
+.po-block {
+     width: 19.7%;
+     margin-right: .3%;
+     background-color: rgb(131, 33, 229);
+}
+
+.ws-block {
+     width: 19.7%;
+     margin-right: .3%;
+     background-color: rgb(33, 229, 115);
+}
+
+.v-block {
+     width: 9.7%;
+     margin-right: .3%;
+     background-color: rgb(33, 66, 229);
+}
+.o-block {
+     width: 19.7%;
+     margin-right: .3%;
+     background-color: rgb(33, 229, 115);
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 1000px) {
+     .col {
+          margin: 1px 0 1px 0%;
+     }
+     .outer-1,
+     .outer-2,
+     .bp-block,
+     .ws-block,
+     .v-block,
+     .o-block,
+     .po-block {
+          width: 100%;
+     }
+
+     .responsive-boxs{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+     }
+}
+
+.user-info {
+     ion-avatar {
+          box-shadow: 0px 0px 2px #000;
+          height: 50px;
+          width: 50px;
+     }
+     .personal-details {
+          h2 {
+               font-size: 16px;
+               font-weight: revert;
+          }
+          p {
+               font-size: 14px;
+          }
+          p:not(:nth-child(2)) {
+               font-size: 12px;
+          }
+     }
+}
+
+.box-tittle {
+     display: flex;
+     gap: 8px;
+     justify-content: center;
+     padding-top: 6px;
+
+     img {
+          width: 15px;
+          height: 15px;
+     }
+     span {
+          font-size: 13px;
+     }
+}
+
+.box-details {
+     display: flex;
+     justify-content: space-around;
+     .main-day {
+          text-align: center;
+          h2 {
+               font-size: 17px;
+               font-weight: bold;
+               margin-bottom: 6px;
+          }
+          p {
+               margin-top: 0;
+          }
+     }
+     .sec-day {
+          text-align: center;
+          h2 {
+               font-size: 17px;
+               margin-bottom: 6px;
+          }
+          p {
+               margin-top: 0;
+          }
+     }
+}

@@ -11,7 +11,7 @@
                "skipFiles": [
                     "<node_internals>/**"
                ],
-               "program": "${workspaceFolder}/src/modules/a-worker.js"
+               "program": "${workspaceFolder}/src/dsa/1-linked-list/single-linked-list.js",
           }
      ]
 }
